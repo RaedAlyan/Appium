@@ -42,6 +42,7 @@ accept_data_checkbox_element = driver.find_element(By.CLASS_NAME, 'android.widge
 accept_data_checkbox_element.click()
 register_user_btn = driver.find_element(By.ID, 'io.selendroid.testapp:id/btnRegisterUser')
 register_user_btn.click()
+driver.quit()
 
 
 
