@@ -1,4 +1,3 @@
-import time
 from appium import webdriver
 from appium.webdriver.common.appiumby import AppiumBy
 from appium.webdriver.webdriver import AppiumOptions
@@ -45,7 +44,6 @@ save_button = WebDriverWait(driver, 30).until(
     ec.element_to_be_clickable((AppiumBy.ID, 'com.android.contacts:id/editor_menu_save_button'))
 )
 save_button.click()
-time.sleep(10)
 driver.quit()
 
 
