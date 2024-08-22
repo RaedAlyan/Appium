@@ -1,6 +1,6 @@
 from appium import webdriver
 from appium.webdriver.common.appiumby import AppiumBy
-from appium.webdriver.webdriver import AppiumOptions
+from appium.options.android import UiAutomator2Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
@@ -13,8 +13,7 @@ DESIRED_CAPABILITIES = {
     "appium:appActivity": ".activities.PeopleActivity",
 }
 
-desired_capabilities = AppiumOptions()
-desired_capabilities.load_capabilities(DESIRED_CAPABILITIES)
+desired_capabilities = UiAutomator2Options().load_capabilities(DESIRED_CAPABILITIES)
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', options=desired_capabilities)
 create_new_account_button = WebDriverWait(driver, 30).until(
     ec.element_to_be_clickable((AppiumBy.ACCESSIBILITY_ID, 'Create new contact'))
