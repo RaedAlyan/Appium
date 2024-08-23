@@ -14,3 +14,11 @@ contacts = {
     "deviceName": "Pixel 8 Pro API 26",
     "udid": "emulator-5554"
 }
+
+wdio = {
+    "appium:appPackage": "com.wdiodemoapp",
+    "appium:appActivity": ".MainActivity",
+    "platformName": "Android",
+    "deviceName": "Pixel 8 Pro API 26",
+    "udid": "emulator-5554"
+}
