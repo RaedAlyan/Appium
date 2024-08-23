@@ -22,3 +22,11 @@ wdio = {
     "deviceName": "Pixel 8 Pro API 26",
     "udid": "emulator-5554"
 }
+
+maps = {
+    "appium:appPackage": "com.google.android.apps.maps",
+    "appium:appActivity": "com.google.android.maps.MapsActivity",
+    "platformName": "Android",
+    "deviceName": "Pixel 8 Pro API 26",
+    "udid": "emulator-5554"
+}
