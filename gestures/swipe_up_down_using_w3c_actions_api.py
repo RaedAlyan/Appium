@@ -18,7 +18,7 @@ driver.swipe(start_x=grid.location['x'], start_y=grid.location['y'], end_x=butto
 
 # Swipe Down
 tabs = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Tabs')
-picker = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='WebView')
-driver.swipe(start_x=tabs.location['x'], start_y=tabs.location['y'], end_x=picker.location['x'],
-             end_y=picker.location['y'])
+webview = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='WebView')
+driver.swipe(start_x=tabs.location['x'], start_y=tabs.location['y'], end_x=webview.location['x'],
+             end_y=webview.location['y'])
 driver.quit()
